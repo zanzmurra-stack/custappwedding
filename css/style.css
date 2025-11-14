@@ -152,7 +152,7 @@ sup {
 }
 
 a {
-  color: #E47A2E;
+  color: #8a3a00;
   text-decoration: none;
   background-color: transparent;
 }
@@ -9761,4 +9761,24 @@ a.text-dark:hover, a.text-dark:focus {
   #event .border-right {
     border-right: none !important;
   }
+}
+/* === Bagian Sambutan === */
+#sambutan {
+  text-align: center;
+  font-family: "Font Awesome 5 Free";/* font elegan untuk teks Latin */
+  font-size: 15px;
+  color: var(--dark);
+  margin-top: -30px;
+  margin-bottom: 10px; /* jarak ke bawah */
+  padding: 0 10px;
+  line-height: 1.6;
+}
+
+/* Tulisan Bismillah dalam font Arab */
+.bismillah {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif; /* font Arab */
+  direction: rtl; /* teks Arab dari kanan ke kiri */
+  font-size: 30px; /* ubah angka ini untuk membesarkan font */
+  color: var(--dark) /* hijau tua elegan, bisa diganti #000 untuk hitam */
+
 }
