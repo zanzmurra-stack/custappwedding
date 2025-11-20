@@ -11051,3 +11051,11 @@ a.text-dark:focus {
   font-size: 14px;
   color: black; 
 }
+
+/* Hover effect */
+.btn-location:hover,
+#openBtn:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px;
+}
