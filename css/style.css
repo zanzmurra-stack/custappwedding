@@ -11015,24 +11015,23 @@ a.text-dark:focus {
 }
 
 .time-circle {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 2px solid #020408;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 8px;
 }
 
 .time-circle span {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
     color: #020408;
 }
 
 .time-box p {
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #020408;
