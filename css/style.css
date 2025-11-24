@@ -11059,3 +11059,56 @@ a.text-dark:focus {
   transform: scale(1.05);
   box-shadow: 0 6px 16px;
 }
+
+#musik {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Container agar tombol selalu terlihat */
+.music-btn-container {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+}
+
+/* Tombol musik */
+#playButton {
+    background: #ffffff;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 40px;
+
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    transition: all 0.35s ease;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Hover effect */
+#playButton:hover {
+    background: #f8dcdc;
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* Animasi ikon musik ketika sedang play */
+.music-playing {
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
