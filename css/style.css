@@ -10683,6 +10683,27 @@ a.text-dark:focus {
   animation: action 1s infinite alternate;
 }
 
+.back-to-bottom {
+    position: fixed;
+    text-align: center;
+    bottom: 30px;
+    left: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate;
+}
+
+
+/*.back-to-bottom {
+  position: fixed;
+  display: none;
+  text-align: center;
+  left: 30px;   /* pindahkan ke kiri 
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}*/
+
+
 @keyframes action {
   0% {
     transform: translateY(0);
