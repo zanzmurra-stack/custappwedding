@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('img/riatemahijau20.jpg') center/cover no-repeat;
+            font-family: Arial, sans-serif;
+            
+        }
+
+        .box {
+            text-align: center;
+            margin-top: 0px;
+            padding: 30px;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+     
+    <div class="box text-center">  
+        <h1 class="font-secondary text-white display-4">Our Wedding </h1>
+                            <i class="far  text-white"></i>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Ria Wahyuni<p>&</p>Siswandi
+                                Prabowo</h1>
+                            <div class="d-inline-block-bottom border-light py-3 px-4">
+                                <h5 class="font-secondary text-white display-4" style="letter-spacing: 0px;">06 Desember
+                                    2025</h5>
+                            </div>
+        <!-- TOMBOL MASUK -->
+        <button class="btn-open" style="margin-bottom: 20px;" data-aos="zoom-in" id="openInvite" >Buka Undangan</button>
+    </div>
+
+    <script>
+        document.getElementById("openInvite").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
+
+</body>
+</html>

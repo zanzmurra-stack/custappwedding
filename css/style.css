@@ -96,12 +96,12 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 100px;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 50px;
 }
 
 abbr[title],
@@ -10749,6 +10749,7 @@ a.text-dark:focus {
 
 .section-title {
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .section-title::before {
@@ -11081,6 +11082,30 @@ a.text-dark:focus {
   box-shadow: 0 6px 16px;
 }
 
+.btn-open,
+#openBtn {
+  display: inline-block;
+  font-family: 'Time New Roman';
+  padding: 10px 20px;
+  background-color: #A7C9E8; 
+  font-weight: 600;
+  border: none;
+  border-radius: 90px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  font-size: 14px;
+  color: #fff; 
+}
+
+/* Hover effect */
+.btn-open:hover,
+#openBtn:hover {
+  background-color: #A7C9E8;
+  font-family: 'Time New Roman';
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px;
+}
+
 #musik {
   width: 100%;
   height: 40px;
@@ -11132,4 +11157,29 @@ a.text-dark:focus {
     0% { transform: scale(1); }
     50% { transform: scale(1.15); }
     100% { transform: scale(1); }
+}
+
+
+/* Keyframes untuk animasi jatuh */
+@keyframes fall {
+    0% {
+        transform: translateY(-10%) scale(0.8); /* Mulai sedikit di atas dan kecil */
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) scale(1.2); /* Jatuh ke bawah layar dan sedikit membesar */
+        opacity: 0.4;
+    }
+}
+
+/* Keyframes untuk animasi jatuh */
+@keyframes fall {
+    0% {
+        transform: translateY(-10%) scale(0.8); /* Mulai sedikit di atas dan kecil */
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) scale(1.2); /* Jatuh ke bawah layar dan sedikit membesar */
+        opacity: 0.4;
+    }
 }
