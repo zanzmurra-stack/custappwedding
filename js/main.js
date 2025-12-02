@@ -196,5 +196,48 @@
         window.location.href = "index.html";
       });
   });
-  
+  // script.js
+
+(function () {
+  'use strict';
+
+  const preloader = document.getElementById('preloader');
+  const mainContent = document.getElementById('main-content');
+
+  // Fungsi untuk menandai preloader sudah selesai
+  function hidePreloader() {
+    if (!preloader) return;
+
+    // Tambah kelas untuk transisi fade
+    preloader.classList.add('loaded');
+
+    // Setelah transisi selesai, hapus elemen dari DOM (opsional)
+    const removeDelay = 600; // ms, sedikit lebih lama dari --fade-duration
+    setTimeout(() => {
+      if (preloader && preloader.parentNode) {
+        preloader.parentNode.removeChild(preloader);
+      }
+    }, removeDelay);
+
+    // Tampilkan konten utama
+    if (mainContent) {
+      mainContent.classList.remove('hidden');
+    }
+  }
+
+  // Jika halaman sudah selesai load
+  window.addEventListener('load', function () {
+    // beri jeda kecil supaya animasi terlihat smooth (opsional)
+    setTimeout(hidePreloader, 2000);
+  });
+
+  // Safety fallback: jika load terlalu lama (mis. 8 detik), sembunyikan preloader
+  setTimeout(function () {
+    if (document.getElementById('preloader')) {
+      hidePreloader();
+    }
+  }, 8000);
+
+})();
+
 })(jQuery);
